@@ -92,7 +92,7 @@ describe('react-store-locator', () => {
     expect(onMapInit).toHaveBeenLastCalledWith(resolveCreateValue);
 
     rerender(<StoreLocator onMapInit={onMapInit} {...options} mapOptions={{}} />);
-    await waitFor(() => onMapInit.mock.calls.length > 1);
+    await waitFor(() => onMapInit.mock.calls.length > 2);
 
     expect(onMapInit).toHaveBeenCalledTimes(3);
     expect(onMapInit).toHaveBeenLastCalledWith(resolveCreateValue);
