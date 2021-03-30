@@ -1,0 +1,84 @@
+{
+  "name": "@gocrisp/react-store-locator",
+  "version": "0.1.0",
+  "description": "React component for Crisp's store locator widget, intended for use with the Crisp GeoJSON connector.",
+  "main": "dist/react-store-locator.js",
+  "umd:main": "dist/react-store-locator.umd.js",
+  "module": "dist/react-store-locator.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "dependencies": {
+    "@gocrisp/store-locator": "^0.1.4",
+    "@googlemaps/js-api-loader": "^1.11.3",
+    "@types/react": "^17.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.30.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.0.16",
+    "@types/google.maps": "^3.44.2",
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-jest-dom": "^3.6.5",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "jest": "^26.4.2",
+    "microbundle": "^0.13.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "prettier": "^2.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "start": "yarn build && echo '----\nIf you want to see changes to the /src files automatically, please run `yarn dev` in a separate console\n----' && yarn example",
+    "test": "jest --watch",
+    "test-ci": "jest --ci --coverage",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --report-unused-disable-directives --max-warnings 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocrisp/store-locator"
+  },
+  "keywords": [],
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "dist",
+      "coverage"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsconfig": {
+          "jsx": "react"
+        }
+      }
+    }
+  },
+  "author": "Crisp",
+  "license": "MIT",
+  "homepage": "https://github.com/gocrisp/store-locator#readme",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
