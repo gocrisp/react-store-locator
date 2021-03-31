@@ -12,8 +12,7 @@
   ],
   "dependencies": {
     "@gocrisp/store-locator": "^0.1.4",
-    "@googlemaps/js-api-loader": "^1.11.3",
-    "@types/react": "^17.0.3"
+    "@googlemaps/js-api-loader": "^1.11.3"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.30.0",
@@ -35,25 +34,23 @@
     "eslint-plugin-testing-library": "^3.10.1",
     "jest": "^26.4.2",
     "microbundle": "^0.13.0",
-    "parcel-bundler": "^1.12.5",
-    "parcel-plugin-static-files-copy": "^2.6.0",
     "prettier": "^2.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "ts-jest": "^26.5.4",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "@types/react": "^17.0.3"
   },
   "scripts": {
     "build": "microbundle -o dist/ --sourcemap false --compress false",
     "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
-    "start": "yarn build && echo '----\nIf you want to see changes to the /src files automatically, please run `yarn dev` in a separate console\n----' && yarn example",
     "test": "jest --watch",
     "test-ci": "jest --ci --coverage",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --report-unused-disable-directives --max-warnings 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gocrisp/store-locator"
+    "url": "git+https://github.com/gocrisp/react-store-locator"
   },
   "keywords": [],
   "jest": {
@@ -77,7 +74,7 @@
   },
   "author": "Crisp",
   "license": "MIT",
-  "homepage": "https://github.com/gocrisp/store-locator#readme",
+  "homepage": "https://github.com/gocrisp/react-store-locator#readme",
   "peerDependencies": {
     "react": "^17.0.2"
   }

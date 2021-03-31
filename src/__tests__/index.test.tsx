@@ -8,7 +8,7 @@ jest.mock('@gocrisp/store-locator');
 
 const options = {
   loaderOptions: { apiKey: 'AIzaSyDdH3QeHDu3XGXwcIF9sMHQmbn2YS4N4Kk' },
-  geoJsonUrl: './sample.json',
+  geoJsonUrl: 'https://platform.gocrisp.com/geojson.json',
   mapOptions: { center: { lat: 52.632469, lng: -1.689423 }, zoom: 7 },
   formatLogoPath: (feature: google.maps.Data.Feature) =>
     `img/${feature
@@ -36,8 +36,7 @@ describe('react-store-locator', () => {
     const createMap = mockCreateStoreLocatorMap();
     render(<StoreLocator onMapInit={jest.fn} {...options} />);
     expect(createMap).toHaveBeenCalledTimes(1);
-    // eslint-disable-next-line
-    // @ts-ignore
+    // @ts-expect-error Tuple of type [] has no matching index 0
     expect(createMap.mock.calls[0][0]).toMatchObject(options);
   });
 
