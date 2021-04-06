@@ -16,7 +16,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
   className,
   style,
   loaderOptions,
-  geoJsonUrl,
+  geoJson,
   mapOptions,
   infoWindowOptions,
   formatLogoPath,
@@ -29,7 +29,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
       createStoreLocatorMap({
         container: containerRef.current,
         loaderOptions,
-        geoJsonUrl,
+        geoJson,
         mapOptions,
         infoWindowOptions,
         formatLogoPath,
@@ -38,7 +38,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
         .then(onMapInit)
         .catch(err => console.error('Could not initialize store locator map.', err));
     }
-  }, [loaderOptions, geoJsonUrl, formatLogoPath, infoWindowOptions, mapOptions]);
+  }, [loaderOptions, geoJson, formatLogoPath, infoWindowOptions, mapOptions]);
 
   // Include a default minHeight to prevent confusion over why the map is not visible if no
   // styling is provided.
