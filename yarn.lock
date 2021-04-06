@@ -964,9 +964,9 @@
     strip-json-comments "^3.1.1"
 
 "@gocrisp/store-locator@^0.1.4":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@gocrisp/store-locator/-/store-locator-0.1.5.tgz#6335ea03e5806b8a7976327216afb0776cd29063"
-  integrity sha512-UaGjA2rlIqE/tiRYbzE2lV8MtJDIt8RO5+HE99w7YmR9ZEQ/1tFvctgbGGyzKWkl63dtSzw1/9N30E3RGsRgYg==
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@gocrisp/store-locator/-/store-locator-0.1.6.tgz#1d42a1cc4edd1ff7bc4f6220f06334ace097d861"
+  integrity sha512-ckVtupAcLqaG9h84KhRKNTzrhcJahklXGv0NxdlZblIefOlqC7eIZOY73mcklh+CCSsd/JtKPGqIawwUYq4rIA==
   dependencies:
     "@googlemaps/js-api-loader" "^1.11.3"
 
