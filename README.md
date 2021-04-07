@@ -20,7 +20,7 @@ import { StoreLocator } from '@gocrisp/react-store-locator';
   style={{ margin: 'auto' }}
   mapOptions={{ center: { lat: 52.632469, lng: -1.689423 }, zoom: 7 }}
   formatLogoPath={feature =>
-    `img/${feature.toLowerCase()}.png`
+    `img/${feature.getProperty('banner').toLowerCase()}.png`
   }
   searchBoxOptions={{
     autocompleteOptions: {

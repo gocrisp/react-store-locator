@@ -5,14 +5,16 @@ import {
   StoreLocatorOptions,
 } from '@gocrisp/store-locator';
 
+import '@gocrisp/store-locator/dist/store-locator.css';
+
 export type StoreLocatorProps = Omit<StoreLocatorOptions, 'container'> & {
   className?: string;
   style?: React.CSSProperties;
-  onMapInit: (storeLocatorMap: StoreLocatorMap) => void;
+  onMapInit?: (storeLocatorMap: StoreLocatorMap) => void;
 };
 
 export const StoreLocator: React.VFC<StoreLocatorProps> = ({
-  onMapInit,
+  onMapInit = () => {},
   className,
   style,
   loaderOptions,
