@@ -5,18 +5,20 @@ import {
   StoreLocatorOptions,
 } from '@gocrisp/store-locator';
 
+import '@gocrisp/store-locator/dist/store-locator.css';
+
 export type StoreLocatorProps = Omit<StoreLocatorOptions, 'container'> & {
   className?: string;
   style?: React.CSSProperties;
-  onMapInit: (storeLocatorMap: StoreLocatorMap) => void;
+  onMapInit?: (storeLocatorMap: StoreLocatorMap) => void;
 };
 
 export const StoreLocator: React.VFC<StoreLocatorProps> = ({
-  onMapInit,
+  onMapInit = () => {},
   className,
   style,
   loaderOptions,
-  geoJsonUrl,
+  geoJson,
   mapOptions,
   infoWindowOptions,
   formatLogoPath,
@@ -29,7 +31,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
       createStoreLocatorMap({
         container: containerRef.current,
         loaderOptions,
-        geoJsonUrl,
+        geoJson,
         mapOptions,
         infoWindowOptions,
         formatLogoPath,
@@ -38,7 +40,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
         .then(onMapInit)
         .catch(err => console.error('Could not initialize store locator map.', err));
     }
-  }, [loaderOptions, geoJsonUrl, formatLogoPath, infoWindowOptions, mapOptions]);
+  }, [loaderOptions, geoJson, formatLogoPath, infoWindowOptions, mapOptions]);
 
   // Include a default minHeight to prevent confusion over why the map is not visible if no
   // styling is provided.

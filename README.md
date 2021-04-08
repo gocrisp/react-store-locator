@@ -15,12 +15,12 @@ yarn add @gocrisp/react-store-locator
 import { StoreLocator } from '@gocrisp/react-store-locator';
 
 <StoreLocator 
-  geoJsonUrl="<URL from the GeoJSON connector>"
+  geoJson="<URL from the GeoJSON connector>"
   loaderOptions={{ apiKey: '<your Google Maps API key>' }}
   style={{ margin: 'auto' }}
   mapOptions={{ center: { lat: 52.632469, lng: -1.689423 }, zoom: 7 }}
   formatLogoPath={feature =>
-    `img/${feature.toLowerCase()}.png`
+    `img/${feature.getProperty('banner').toLowerCase()}.png`
   }
   searchBoxOptions={{
     autocompleteOptions: {
