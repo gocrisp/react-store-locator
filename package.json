@@ -37,6 +37,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-testing-library": "^3.10.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
     "microbundle": "^0.13.0",
     "parcel-bundler": "^1.12.5",
@@ -71,6 +72,9 @@
     ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|jpg|png)$": "identity-obj-proxy"
     },
     "globals": {
       "ts-jest": {
