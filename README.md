@@ -9,13 +9,11 @@ This uses the [Google Maps JavaScript API](https://developers.google.com/maps/do
 
 Please refer to [our example page](https://gocrisp.github.io/store-locator/) to see this package in action and for more advanced usage examples. The steps below will provide the minimum for creating a store locator with React.
 
-----
-
 ## Create a Store Locator
 
 ### Set up services
 
-First, go set up a GeoJSON outbound connector on https://platform.gocrisp.com/. It will give you a URL to use later. <!--TODO: needs details/link to BYT-573 or updates if we aren't using an outbound connector -->
+First, go set up a GeoJSON outbound connector on https://platform.gocrisp.com/. It will give you a URL to use later. <!--TODO: needs details/link to BYT-573 -->
 
 Create a [Google Maps API Key](https://developers.google.com/maps/gmp-get-started) with the following APIs enabled:
 - `Maps JavaScript API`
@@ -29,6 +27,8 @@ Install this package
 yarn add @gocrisp/react-store-locator
 ```
 
+Include the styles: We have some minimal styles included as plain css in `@gocrisp/react-store-locator/dist/react-store-locator.css`. You will need to pull this into your site however you are including styles. We've kept the definitions as minimal as possible so that you can easily override or recreate the styles yourself. And every class is namespaced with the `map_` prefix to avoid collisions. 
+
 Then, wherever you want to include the store locator map, insert this snippet:
 ```jsx
 import { createStoreLocatorMap } from '@gocrisp/react-store-locator';
@@ -39,5 +39,5 @@ import { createStoreLocatorMap } from '@gocrisp/react-store-locator';
 />
 ```
 
-Most of the Google Maps JavaScript API options and objects are available for customization as well. More details are available in the [examples and documentation](todo).
+Most of the Google Maps JavaScript API options and objects are available for customization as well. More details are available in the [examples and documentation](https://gocrisp.github.io/store-locator/).
 
