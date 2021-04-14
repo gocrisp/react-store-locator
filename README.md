@@ -22,12 +22,16 @@ Create a [Google Maps API Key](https://developers.google.com/maps/gmp-get-starte
 
 
 ### Simple Implementation
-Install this package
+**Install this package**
 ```bash
 yarn add @gocrisp/react-store-locator
 ```
+or
+```
+npm install @gocrisp/store-locator --save
+```
 
-Include the styles: We have some minimal styles included as plain css in `@gocrisp/react-store-locator/dist/react-store-locator.css`. You will need to pull this into your site however you are including styles. We've kept the definitions as minimal as possible so that you can easily override or recreate the styles yourself. And every class is namespaced with the `map_` prefix to avoid collisions. 
+**Include the styles:** We have some minimal styles included as plain css in `@gocrisp/react-store-locator/dist/react-store-locator.css`. You will need to pull this into your site however you are including styles. We've kept the definitions as minimal as possible so that you can easily override or recreate the styles yourself. And every class is namespaced with the `map_` prefix to avoid collisions. 
 
 Then, wherever you want to include the store locator map, insert this snippet:
 ```jsx
