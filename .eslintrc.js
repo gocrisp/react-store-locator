@@ -7,7 +7,8 @@ module.exports = {
     "prettier",
     "testing-library",
     "jest-dom",
-    "import"
+    "import",
+    "react"
   ],
   extends: [
     "eslint:recommended",
@@ -22,7 +23,9 @@ module.exports = {
     "plugin:jest-dom/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
   ],
   parserOptions: {
     project: "tsconfig.json"
@@ -38,6 +41,12 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": ["off"],
     "@typescript-eslint/explicit-member-accessibility": ["off"],
     "@typescript-eslint/no-empty-function": ["off"],
-    "import/order": ["error"]
+    "import/order": ["error"],
+    "react/prop-types": "off"
   },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  }
 }

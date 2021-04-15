@@ -1,6 +1,6 @@
 {
   "name": "@gocrisp/react-store-locator",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "React component for Crisp's store locator widget, intended for use with the Crisp GeoJSON connector.",
   "main": "dist/react-store-locator.js",
   "umd:main": "dist/react-store-locator.umd.js",
@@ -11,7 +11,7 @@
     "readme.md"
   ],
   "dependencies": {
-    "@gocrisp/store-locator": "^0.2.0",
+    "@gocrisp/store-locator": "^0.4.0",
     "@googlemaps/js-api-loader": "^1.11.3"
   },
   "devDependencies": {
@@ -36,6 +36,8 @@
     "eslint-plugin-jest-dom": "^3.6.5",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",

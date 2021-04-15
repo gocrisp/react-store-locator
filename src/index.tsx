@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   createStoreLocatorMap,
   StoreLocatorMap,
@@ -6,6 +6,7 @@ import {
 } from '@gocrisp/store-locator';
 
 import '@gocrisp/store-locator/dist/store-locator.css';
+import { Loader } from '@googlemaps/js-api-loader';
 
 export type StoreLocatorProps = Omit<StoreLocatorOptions, 'container'> & {
   className?: string;
@@ -23,11 +24,26 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
   infoWindowOptions,
   formatLogoPath,
   searchBoxOptions,
+  skipLoadingGoogleMaps,
 }) => {
+  const [mapsLibraryLoaded, setMapsLibraryLoaded] = useState(skipLoadingGoogleMaps);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (containerRef.current) {
+    if (!skipLoadingGoogleMaps) {
+      const loader = new Loader({
+        apiKey: loaderOptions.apiKey,
+        libraries: ['places', 'geometry'],
+      });
+      loader
+        .load()
+        .then(() => setMapsLibraryLoaded(true))
+        .catch(err => console.error('Could not load Google Maps', err));
+    }
+  }, [loaderOptions.apiKey, skipLoadingGoogleMaps]);
+
+  useEffect(() => {
+    if (containerRef.current && mapsLibraryLoaded) {
       createStoreLocatorMap({
         container: containerRef.current,
         loaderOptions,
@@ -36,11 +52,21 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
         infoWindowOptions,
         formatLogoPath,
         searchBoxOptions,
+        skipLoadingGoogleMaps: true,
       })
         .then(onMapInit)
         .catch(err => console.error('Could not initialize store locator map.', err));
     }
-  }, [loaderOptions, geoJson, formatLogoPath, infoWindowOptions, mapOptions]);
+  }, [
+    mapsLibraryLoaded,
+    loaderOptions,
+    geoJson,
+    formatLogoPath,
+    infoWindowOptions,
+    mapOptions,
+    searchBoxOptions,
+    onMapInit,
+  ]);
 
   // Include a default minHeight to prevent confusion over why the map is not visible if no
   // styling is provided.
