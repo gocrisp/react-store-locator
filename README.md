@@ -19,6 +19,7 @@ Create a [Google Maps API Key](https://developers.google.com/maps/gmp-get-starte
 - `Maps JavaScript API`
 - `Places API`
 - `Distance Matrix API`.
+- `Street View Static API`
 
 
 ### Simple Implementation
@@ -35,7 +36,7 @@ npm install @gocrisp/store-locator --save
 
 Then, wherever you want to include the store locator map, insert this snippet:
 ```jsx
-import { createStoreLocatorMap } from '@gocrisp/react-store-locator';
+import { StoreLocator } from '@gocrisp/react-store-locator';
 
 <StoreLocator 
   geoJson="<URL from the GeoJSON connector>"
