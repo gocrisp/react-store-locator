@@ -50,6 +50,9 @@
     "ts-jest": "^26.5.4",
     "typescript": "^4.0.3"
   },
+  "resolutions": {
+    "is-svg": ">=4.2.2"
+  },
   "scripts": {
     "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement --external react",
     "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
