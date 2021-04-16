@@ -7,7 +7,7 @@ import { StoreLocator } from '../index';
 jest.mock('@gocrisp/store-locator');
 
 const options = {
-  loaderOptions: { apiKey: 'AIzaSyDdH3QeHDu3XGXwcIF9sMHQmbn2YS4N4Kk' },
+  loaderOptions: { apiKey: 'api-key' },
   geoJson: 'https://platform.gocrisp.com/geojson.json',
   mapOptions: { center: { lat: 52.632469, lng: -1.689423 }, zoom: 7 },
   formatLogoPath: (feature: google.maps.Data.Feature) =>
