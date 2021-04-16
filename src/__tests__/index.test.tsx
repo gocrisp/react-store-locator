@@ -32,20 +32,20 @@ describe('react-store-locator', () => {
 
   beforeEach(mockCreateStoreLocatorMap);
 
-  it('calls createStoreLocatorMap on render', async () => {
+  it('calls createStoreLocatorMap on render', () => {
     render(<StoreLocator onMapInit={jest.fn} {...options} />);
     expect(createStoreLocatorMap).toHaveBeenCalledTimes(1);
     // @ts-expect-error Tuple of type [] has no matching index 0
     expect(createStoreLocatorMap.mock.calls[0][0]).toMatchObject(options);
   });
 
-  it('includes classNames on container', async () => {
+  it('includes classNames on container', () => {
     const className = 'cls1 cls2 cls3';
     render(<StoreLocator onMapInit={jest.fn} {...options} className={className} />);
     expect(document.getElementsByClassName(className)?.length).toBe(1);
   });
 
-  it('includes style properties on container', async () => {
+  it('includes style properties on container', () => {
     const style = {
       overflow: 'hidden',
       backgroundColor: 'red',
