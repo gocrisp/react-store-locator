@@ -57,7 +57,7 @@ describe('react-store-locator', () => {
     expect(element).toHaveStyle(style);
   });
 
-  it('position and overflow are constant (cannot be overwritten)', async () => {
+  it('position and overflow are constant (cannot be overwritten)', () => {
     const style = {
       position: 'absolute',
       overflow: 'auto',

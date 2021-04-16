@@ -29,7 +29,7 @@ yarn add @gocrisp/react-store-locator
 ```
 or
 ```bash
-npm install @gocrisp/store-locator --save
+npm install @gocrisp/react-store-locator --save
 ```
 
 **Include the styles:** We have some minimal styles included as plain css in `@gocrisp/react-store-locator/dist/react-store-locator.css`. You will need to pull this into your site however you are including styles. We've kept the definitions as minimal as possible so that you can easily override or recreate the styles yourself. And every class is namespaced with the `map_` prefix to avoid collisions. 
