@@ -86,3 +86,4 @@ dist/
 coverage/
 
 .idea/
+.env.local
