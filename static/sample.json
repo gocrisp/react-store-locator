@@ -7,9 +7,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Mayfair",
-              "formattedAddress": "The Vestry, 2A Mill St, Mayfair, London W1S 1FX, UK"
+              "store": "Josie's Patisserie Mayfair",
+              "storeFullAddress": "The Vestry, 2A Mill St, Mayfair, London W1S 1FX, UK"
           }
       },
       {
@@ -19,9 +18,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Bristol",
-              "formattedAddress": "Linear Park, Bristol, UK"
+              "store": "Josie's Patisserie Bristol",
+              "storeFullAddress": "Linear Park, Bristol, UK"
           }
       },
       {
@@ -31,9 +29,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Norwich",
-              "formattedAddress": "140 Armes St, Norwich NR2 4EA, UK"
+              "store": "Josie's Patisserie Norwich",
+              "storeFullAddress": "140 Armes St, Norwich NR2 4EA, UK"
           }
       },
       {
@@ -43,9 +40,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Wimborne",
-              "formattedAddress": "2 Three Lions Cl, Wimborne BH21 1EP, UK"
+              "store": "Josie's Patisserie Wimborne",
+              "storeFullAddress": "2 Three Lions Cl, Wimborne BH21 1EP, UK"
           }
       },
       {
@@ -55,9 +51,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Liverpool",
-              "formattedAddress": "106 Dale St, Liverpool L2 4TQ, United Kingdom"
+              "store": "Josie's Patisserie Liverpool",
+              "storeFullAddress": "106 Dale St, Liverpool L2 4TQ, United Kingdom"
           }
       },
       {
@@ -67,9 +62,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Tamworth",
-              "formattedAddress": "Saxon Mill Ln, Tamworth B79 7JJ, UK"
+              "store": "Josie's Patisserie Tamworth",
+              "storeFullAddress": "Saxon Mill Ln, Tamworth B79 7JJ, UK"
           }
       },
       {
@@ -79,9 +73,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Patisserie",
-              "name": "Cardiff",
-              "formattedAddress": "128 E Tyndall St, Cardiff CF24 5EX, UK"
+              "store": "Josie's Patisserie Cardiff",
+              "storeFullAddress": "128 E Tyndall St, Cardiff CF24 5EX, UK"
           }
       },
       {
@@ -91,9 +84,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Oakham",
-              "formattedAddress": "B640, Oakham LE15 6HW, UK"
+              "store": "Josie's Cafe Oakham",
+              "storeFullAddress": "B640, Oakham LE15 6HW, UK"
           }
       },
       {
@@ -103,9 +95,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Blackburn",
-              "formattedAddress": "Blackburn, UK"
+              "store": "Josie's Cafe Blackburn",
+              "storeFullAddress": "Blackburn, UK"
           }
       },
       {
@@ -115,9 +106,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Crawley",
-              "formattedAddress": "124 Buckswood Dr, Crawley RH11 8JA, UK"
+              "store": "Josie's Cafe Crawley",
+              "storeFullAddress": "124 Buckswood Dr, Crawley RH11 8JA, UK"
           }
       },
       {
@@ -127,9 +117,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Brighton",
-              "formattedAddress": "4 Seville St, Brighton BN2 3AR, UK"
+              "store": "Josie's Cafe Brighton",
+              "storeFullAddress": "4 Seville St, Brighton BN2 3AR, UK"
           }
       },
       {
@@ -139,9 +128,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Newtown",
-              "formattedAddress": "13 Fron Hafren, Newtown SY16 2EJ, UK"
+              "store": "Josie's Cafe Newtown",
+              "storeFullAddress": "13 Fron Hafren, Newtown SY16 2EJ, UK"
           }
       },
       {
@@ -151,9 +139,8 @@
           },
           "type": "Feature",
           "properties": {
-              "banner": "Josie's Cafe",
-              "name": "Ipswich",
-              "formattedAddress": "147 Valley Rd, Ipswich IP1 4PQ, UK"
+              "store": "Josie's Cafe Ipswich",
+              "storeFullAddress": "147 Valley Rd, Ipswich IP1 4PQ, UK"
           }
       }
   ]

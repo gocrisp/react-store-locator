@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStoreLocatorMap } from '@gocrisp/store-locator';
 import { render, waitFor } from '@testing-library/react';
-import { StoreLocator } from '../index';
 import '@testing-library/jest-dom';
+import { StoreLocator } from '../index';
 
 jest.mock('@gocrisp/store-locator');
 
@@ -33,17 +33,15 @@ describe('react-store-locator', () => {
   beforeEach(mockCreateStoreLocatorMap);
 
   it('calls createStoreLocatorMap on render', () => {
-    const createMap = mockCreateStoreLocatorMap();
     render(<StoreLocator onMapInit={jest.fn} {...options} />);
-    expect(createMap).toHaveBeenCalledTimes(1);
+    expect(createStoreLocatorMap).toHaveBeenCalledTimes(1);
     // @ts-expect-error Tuple of type [] has no matching index 0
-    expect(createMap.mock.calls[0][0]).toMatchObject(options);
+    expect(createStoreLocatorMap.mock.calls[0][0]).toMatchObject(options);
   });
 
   it('includes classNames on container', () => {
     const className = 'cls1 cls2 cls3';
     render(<StoreLocator onMapInit={jest.fn} {...options} className={className} />);
-
     expect(document.getElementsByClassName(className)?.length).toBe(1);
   });
 

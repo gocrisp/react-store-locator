@@ -40,7 +40,15 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
         .then(onMapInit)
         .catch(err => console.error('Could not initialize store locator map.', err));
     }
-  }, [loaderOptions, geoJson, formatLogoPath, infoWindowOptions, mapOptions]);
+  }, [
+    loaderOptions,
+    geoJson,
+    formatLogoPath,
+    infoWindowOptions,
+    mapOptions,
+    searchBoxOptions,
+    onMapInit,
+  ]);
 
   // Include a default minHeight to prevent confusion over why the map is not visible if no
   // styling is provided.
