@@ -1,15 +1,10 @@
 import React from 'react';
 import { createStoreLocatorMap } from '@gocrisp/store-locator';
 import { render, waitFor } from '@testing-library/react';
-import { Loader } from '@googlemaps/js-api-loader';
 import '@testing-library/jest-dom';
-import { mocked } from 'ts-jest/utils';
 import { StoreLocator } from '../index';
 
 jest.mock('@gocrisp/store-locator');
-
-jest.mock('@googlemaps/js-api-loader');
-const mockLoader = mocked(Loader, true);
 
 const options = {
   loaderOptions: { apiKey: 'AIzaSyDdH3QeHDu3XGXwcIF9sMHQmbn2YS4N4Kk' },
@@ -28,8 +23,6 @@ const options = {
 };
 
 describe('react-store-locator', () => {
-  const onMapInit = jest.fn();
-
   const resolveCreateValue = 14;
   const mockCreateStoreLocatorMap = () => {
     const fn = jest.fn(() => Promise.resolve(resolveCreateValue));
@@ -38,17 +31,9 @@ describe('react-store-locator', () => {
   };
 
   beforeEach(mockCreateStoreLocatorMap);
-  beforeEach(() => {
-    // @ts-expect-error: not mocking the whole thing
-    mockLoader.mockImplementation(() => ({ load: () => Promise.resolve() }));
-
-    onMapInit.mockReset();
-  });
 
   it('calls createStoreLocatorMap on render', async () => {
-    render(<StoreLocator onMapInit={onMapInit} {...options} />);
-    await waitFor(() => onMapInit.mock.calls.length > 0);
-
+    render(<StoreLocator onMapInit={jest.fn} {...options} />);
     expect(createStoreLocatorMap).toHaveBeenCalledTimes(1);
     // @ts-expect-error Tuple of type [] has no matching index 0
     expect(createStoreLocatorMap.mock.calls[0][0]).toMatchObject(options);
@@ -57,8 +42,6 @@ describe('react-store-locator', () => {
   it('includes classNames on container', async () => {
     const className = 'cls1 cls2 cls3';
     render(<StoreLocator onMapInit={jest.fn} {...options} className={className} />);
-    await waitFor(() => onMapInit.mock.calls.length > 0);
-
     expect(document.getElementsByClassName(className)?.length).toBe(1);
   });
 
@@ -70,8 +53,6 @@ describe('react-store-locator', () => {
     const className = 'store-locator';
     render(<StoreLocator onMapInit={jest.fn} {...options} style={style} className={className} />);
 
-    await waitFor(() => onMapInit.mock.calls.length > 0);
-
     const element = document.getElementsByClassName(className)[0];
     expect(element).toHaveStyle(style);
   });
@@ -82,15 +63,14 @@ describe('react-store-locator', () => {
       overflow: 'auto',
     } as React.CSSProperties;
     const className = 'store-locator';
-
     render(<StoreLocator onMapInit={jest.fn} {...options} style={style} className={className} />);
-    await waitFor(() => onMapInit.mock.calls.length > 0);
 
     const element = document.getElementsByClassName(className)[0];
     expect(element).toHaveStyle({ position: 'relative', overflow: 'hidden' });
   });
 
   it('calls onMapInit on initialisation', async () => {
+    const onMapInit = jest.fn();
     render(<StoreLocator onMapInit={onMapInit} {...options} />);
     await waitFor(() => onMapInit.mock.calls.length > 0);
     expect(onMapInit).toHaveBeenCalledTimes(1);
