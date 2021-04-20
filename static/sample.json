@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-0.1428115, 51.5125168]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Mayfair",
+              "storeFullAddress": "The Vestry, 2A Mill St, Mayfair, London W1S 1FX, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-2.579623, 51.452251]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Bristol",
+              "storeFullAddress": "Linear Park, Bristol, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [1.273459, 52.638072]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Norwich",
+              "storeFullAddress": "140 Armes St, Norwich NR2 4EA, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-1.9912838, 50.8000418]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Wimborne",
+              "storeFullAddress": "2 Three Lions Cl, Wimborne BH21 1EP, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-2.985933, 53.408899]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Liverpool",
+              "storeFullAddress": "106 Dale St, Liverpool L2 4TQ, United Kingdom"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-1.689423, 52.632469]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Tamworth",
+              "storeFullAddress": "Saxon Mill Ln, Tamworth B79 7JJ, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-3.155305, 51.479756]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Patisserie Cardiff",
+              "storeFullAddress": "128 E Tyndall St, Cardiff CF24 5EX, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-0.725019, 52.668891]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Oakham",
+              "storeFullAddress": "B640, Oakham LE15 6HW, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-2.477653, 53.735405]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Blackburn",
+              "storeFullAddress": "Blackburn, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-0.211363, 51.108966]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Crawley",
+              "storeFullAddress": "124 Buckswood Dr, Crawley RH11 8JA, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-0.123559, 50.832679]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Brighton",
+              "storeFullAddress": "4 Seville St, Brighton BN2 3AR, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [-3.319575, 52.517827]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Newtown",
+              "storeFullAddress": "13 Fron Hafren, Newtown SY16 2EJ, UK"
+          }
+      },
+      {
+          "geometry": {
+              "type": "Point",
+              "coordinates": [1.158167, 52.071634]
+          },
+          "type": "Feature",
+          "properties": {
+              "store": "Josie's Cafe Ipswich",
+              "storeFullAddress": "147 Valley Rd, Ipswich IP1 4PQ, UK"
+          }
+      }
+  ]
+}

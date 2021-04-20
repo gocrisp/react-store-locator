@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand img {
+  margin: 0 14px 0 28px;
+}
+
+.nav-item {
+  margin-left: 1.3rem;
+}
+
+.nav-link {
+  color: #393939 !important;
+  font-weight: 400;
+}
+
+.active {
+  border-bottom: 2px #dadada solid;
+  margin: 1px .5rem 0;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+footer a:hover, footer a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer img {
+  margin-right: 10px;
+  height: 50px;
+}
+
+/* Undo the reboot.scss from bootstrap so we aren't assuming things! */
+#app *,
+#app *::before,
+#app *::after {
+  box-sizing: content-box;
+}
