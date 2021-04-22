@@ -25,11 +25,12 @@ const App = () => (
         componentRestrictions: { country: 'gb' },
       },
     }}
-    onMapInit={({ map, infoWindow, autocomplete, originMarker }: StoreLocatorMap) => {
+    onMapInit={({ map, infoWindow, autocomplete, originMarker, storeList }: StoreLocatorMap) => {
       console.log(map);
       console.log(infoWindow);
       console.log(autocomplete);
       console.log(originMarker);
+      console.log(storeList);
     }}
   />
 );
