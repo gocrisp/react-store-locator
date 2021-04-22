@@ -1188,10 +1188,9 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gocrisp/store-locator@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@gocrisp/store-locator/-/store-locator-0.4.0.tgz#8894b5b503767ddb7de978618557c88ca281bb35"
-  integrity sha512-yOAyFzkPUfAkK5uFSzgSgQhBCbLeurV2OajNemwHnoIUwbdbAkrCldClutoMnuUmtjD7dyOdJ6Bh5BwkSzvE6g==
+"@gocrisp/store-locator@/Users/jengettings/src/store-locator/gocrisp-store-locator-v0.4.4.tgz":
+  version "0.4.4"
+  resolved "/Users/jengettings/src/store-locator/gocrisp-store-locator-v0.4.4.tgz#b47f94288dd1dac7e67e1001635d11b3351d5543"
   dependencies:
     "@googlemaps/js-api-loader" "^1.11.3"
 

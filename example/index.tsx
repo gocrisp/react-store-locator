@@ -1,3 +1,4 @@
+import { StoreLocatorMap } from '@gocrisp/store-locator';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { StoreLocator } from '../src';
@@ -23,6 +24,12 @@ const App = () => (
       autocompleteOptions: {
         componentRestrictions: { country: 'gb' },
       },
+    }}
+    onMapInit={({ map, infoWindow, autocomplete, originMarker }: StoreLocatorMap) => {
+      console.log(map);
+      console.log(infoWindow);
+      console.log(autocomplete);
+      console.log(originMarker);
     }}
   />
 );
