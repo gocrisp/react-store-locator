@@ -13,6 +13,9 @@ export type StoreLocatorProps = Omit<StoreLocatorOptions, 'container'> & {
   onMapInit?: (storeLocatorMap: StoreLocatorMap) => void;
 };
 
+// Re-export type so it is visible when using this package
+export { StoreLocatorMap } from '@gocrisp/store-locator';
+
 export const StoreLocator: React.VFC<StoreLocatorProps> = ({
   onMapInit = () => {},
   className,
@@ -23,6 +26,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
   infoWindowOptions,
   formatLogoPath,
   searchBoxOptions,
+  storeListOptions,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -36,6 +40,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
         infoWindowOptions,
         formatLogoPath,
         searchBoxOptions,
+        storeListOptions,
       })
         .then(onMapInit)
         .catch(err => console.error('Could not initialize store locator map.', err));
@@ -47,6 +52,7 @@ export const StoreLocator: React.VFC<StoreLocatorProps> = ({
     infoWindowOptions,
     mapOptions,
     searchBoxOptions,
+    storeListOptions,
     onMapInit,
   ]);
 
