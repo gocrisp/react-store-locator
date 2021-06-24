@@ -51,7 +51,10 @@
     "typescript": "^4.0.3"
   },
   "resolutions": {
-    "is-svg": ">=4.2.2"
+    "is-svg": ">=4.2.2",
+    "postcss": ">=8.2.10",
+    "normalize-url": ">=4.5.1",
+    "ws": ">=7.4.6"
   },
   "scripts": {
     "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement --external react",
