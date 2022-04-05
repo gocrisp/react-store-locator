@@ -1,6 +1,6 @@
 {
   "name": "@gocrisp/react-store-locator",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "React component for Crisp's store locator widget, intended for use with the Crisp GeoJSON connector.",
   "main": "dist/react-store-locator.js",
   "umd:main": "dist/react-store-locator.umd.js",
