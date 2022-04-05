@@ -1076,10 +1076,9 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gocrisp/store-locator@^0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@gocrisp/store-locator/-/store-locator-0.5.4.tgz#bb4515ba0dd231bc095d8956b4c326e07627597c"
-  integrity sha512-SKGDc4ZHHYwFKXM141CpA3iLzfmO1z+bTB+nVTTXVaQrP8jvVpf6nKRrismmeadOHVx9UivYHDMFXCYTVlt8Rw==
+"@gocrisp/store-locator@file:../store-locator/gocrisp-store-locator-0.5.6.tgz":
+  version "0.5.6"
+  resolved "file:../store-locator/gocrisp-store-locator-0.5.6.tgz#6dc324526817bc4dc5cbe3d73acbfa15ce837de1"
   dependencies:
     "@googlemaps/js-api-loader" "^1.11.3"
 
@@ -6019,7 +6018,7 @@ node-gyp-build@^4.2.3, node-gyp-build@^4.3.0:
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.4.0.tgz#42e99687ce87ddeaf3a10b99dc06abc11021f3f4"
   integrity sha512-amJnQCcgtRVw9SvoebO3BKGESClrfXGCUTX9hSn1OuGQTQBOZmVd0Z0OlecpuRksKvbsUqALE8jls/ErClAPuQ==
 
-"node-gyp-build@github:kriszyp/node-gyp-build#optional-packages":
+node-gyp-build@kriszyp/node-gyp-build#optional-packages:
   version "4.3.0"
   resolved "https://codeload.github.com/kriszyp/node-gyp-build/tar.gz/c9952cb77e89d2cd8b6c2d4d056a06d41834b305"
 
