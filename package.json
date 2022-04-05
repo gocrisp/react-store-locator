@@ -42,7 +42,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
     "microbundle": "^0.13.0",
-    "parcel-bundler": "^1.12.5",
+    "parcel": "^2.4.1",
     "parcel-plugin-static-files-copy": "^2.6.0",
     "prettier": "^2.0.4",
     "react": "^17.0.2",
@@ -66,7 +66,7 @@
     "test": "jest --watch",
     "test-ci": "jest --ci --coverage",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --report-unused-disable-directives --max-warnings 0",
-    "example": "parcel example/index.html --out-dir example/dist"
+    "example": "parcel example/index.html --dist-dir example/dist"
   },
   "repository": {
     "type": "git",
