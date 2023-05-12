@@ -1,5 +1,7 @@
 # @gocrisp/react-store-locator
 
+**Archival note:** The Crisp GeoJSON outbound connector is deprecated and no longer available.
+
 [![Package Version](https://img.shields.io/npm/v/@gocrisp/react-store-locator.svg)](https://www.npmjs.com/package/@gocrisp/react-store-locator) [![MIT License](https://img.shields.io/npm/l/stack-overflow-copy-paste.svg)](http://opensource.org/licenses/MIT)
 
 
